@@ -1,0 +1,19 @@
+<svg viewBox="0 0 85 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="5.6667" cy="4.21348" rx="4.16667" ry="4.21348" fill="black"/>
+    <ellipse cx="14" cy="9.60673" rx="4.16667" ry="4.21348" fill="black"/>
+    <ellipse cx="22.3333" cy="15" rx="4.16667" ry="4.21348" fill="black"/>
+    <ellipse cx="14" cy="19.382" rx="4.16667" ry="4.21348" fill="black"/>
+    <ellipse cx="5.6667" cy="15" rx="4.16667" ry="4.21348" fill="black"/>
+    <ellipse cx="5.6667" cy="25.7865" rx="4.16667" ry="4.21348" fill="black"/>
+    <text x="30" y="10" fill="black">DataMap</text>
+
+    <style>
+        <![CDATA[
+        text{
+            dominant-baseline: hanging;
+            font: 12px Verdana, Helvetica, Arial, sans-serif;
+        }
+        ]]>
+    </style>
+
+</svg>

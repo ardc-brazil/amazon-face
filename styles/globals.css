@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary-50;
+  }
+  h1 {
+    @apply leading-relaxed text-5xl font-medium;
+  }
+  h2 {
+    @apply leading-relaxed text-4xl font-medium;
+  }
+  h3 {
+    @apply leading-relaxed text-3xl font-medium text-primary-900;
+  }
+  h4 {
+    @apply leading-relaxed text-2xl font-medium text-primary-900;
+  }
+  h5 {
+    @apply leading-relaxed text-xl font-medium text-primary-900;
+  }
+  p {
+    @apply my-3 text-base font-light text-primary-700;
+  }
+  a {
+    @apply text-base font-medium text-primary-900 hover:text-primary-600 outline-secondary-800;
+  }
+  /* button {
+    @apply btn-primary
+  } */
+
+  label {
+    @apply block mb-2 text-sm font-medium text-primary-800;
+  }
+
+  input {
+    @apply bg-primary-100 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 w-full p-2.5 outline-primary-500;
+  }
+
+  textarea {
+    @apply bg-primary-100 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 outline-primary-500;
+  }
+
+  select {
+    @apply bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 outline-primary-500;
+  }
+
+  hr {
+    @apply text-primary-200
+  }
+
+}
+
+@layer components {
+  
+  .btn-primary {
+    @apply bg-primary-900 text-primary-50 active:bg-primary-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg mr-1 mb-1 ease-linear transition-all duration-150 outline-1 outline-offset-2 focus:outline-primary-900 cursor-pointer disabled:opacity-50  disabled:active:bg-primary-900
+  }
+
+  .btn-primary-outline {
+    @apply bg-primary-50 text-primary-900 active:bg-primary-200 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg mr-1 mb-1 ease-linear transition-all duration-150 outline-1 outline-offset-2 focus:outline-primary-900 cursor-pointer disabled:opacity-50  disabled:active:bg-primary-900
+  }
+
+  .btn-small {
+    @apply text-xs px-4 py-2 hover:shadow-md 
+  }
+
+  .btn-lg {
+    @apply text-base px-8 py-3 shadow-md
+  }
+
+  
+  .display-1 {
+    @apply text-8xl font-light;
+  }
+
+  .display-2 {
+    @apply text-7xl font-light;
+  }
+
+  .display-3 {
+    @apply text-6xl font-light;
+  }
+
+  .display-4 {
+    @apply text-5xl font-light;
+  }
+
+  .display-5 {
+    @apply text-4xl font-light;
+  }
+
+  .small-font-size {
+    font-size: 0.75rem !important;
+  }
+
+  .style-checked {
+    list-style: none;
+  }
+  
+  .style-checked:before {
+    content: '✓';
+  }
+
+  .style-error {
+    list-style: none;
+  }
+  
+  .style-error:before {
+    content: 'x';
+  }
+
+  /* https://www.magicpattern.design/tools/css-backgrounds */
+  /* .special-background {
+    
+    background-color: #fbfcfc;
+    opacity: 0.8;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #fbfcfc 10px
+      ),
+      repeating-linear-gradient(#fbfcfc55, #d7e4e3);
+  } */
+
+  .special-background {
+    background-size: 12px 12px;
+    background-image: radial-gradient(
+      circle,
+      #d7e4e3 1px,
+      rgba(0, 0, 0, 0) 1px
+    );
+  }
+
+  /* .marker-style {
+    padding: 30px 0 8px;
+    position: relative;
+  }
+  
+  .marker-style::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 200%;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(238, 111, 87, 0.5);
+    z-index: -1;
+  } */
+}
+
+/*
+  @layer utilities {
+    .filter-none {
+      filter: none;
+    }
+    .filter-grayscale {
+      filter: grayscale(100%);
+    }
+  } */
