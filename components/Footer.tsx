@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ROUTE_PAGE_DATASETS } from "../contants/InternalRoutesConstants";
 
 export interface FooterProps {
   children?: React.ReactNode;
@@ -21,33 +20,18 @@ export function Footer(props: FooterProps) {
             </Link>
             <p className="px-12 py-8">
               Have an account?{" "}
-              <Link
-                href={{
-                  pathname: "/account/login",
-                  query: { phase: "sign-in" },
-                }}
-              >
-                Sign in.
-              </Link>
+              <a href={`${process.env.DATAMAP_BASE_URL}/account/login?phase=sign-in&tenancy=amazon-face`} >
+                Sign in
+              </a >
             </p>
           </div>
           <div className=" row-span-2">
             <h2 className="font-light">Project</h2>
             <ul>
               <li>
-                <Link href="/project/about">
+                <a href="https://amazonface.unicamp.br/" target="_blank">
                   About
-                </Link>
-              </li>
-              <li>
-                <Link href="/project/faqs">
-                  FAQs
-                </Link>
-              </li>
-              <li>
-                <Link href="/project/support">
-                  Support
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="/project/tutorials">
@@ -55,19 +39,19 @@ export function Footer(props: FooterProps) {
                 </Link>
               </li>
               <li>
-                <Link href="/project/privacy-policy">
-                  Privacy Policy
-                </Link>
+                <a href="https://amazonface.unicamp.br/wp-content/uploads/2022/11/amazon-face-data-policy.pdf" target="_blank">
+                  Data Policy
+                </a>
               </li>
             </ul>
           </div>
           <div className=" row-span-2">
-            <h2 className="font-light">Tools</h2>
+            <h2 className="font-light">Communication</h2>
             <ul className="px-2 py-4">
               <li>
-                <Link href={ROUTE_PAGE_DATASETS}>
-                  Datasets
-                </Link>
+                <a href="https://amazonface.unicamp.br/noticias/" target="_blank">
+                  News
+                </a>
               </li>
             </ul>
           </div>

@@ -36,11 +36,11 @@ export default function HomePage() {
         <div className="container mx-auto flex flex-row flex-wrap pt-56 pb-24">
           <div className="w-full">
             <h1 className="font-bold text-8xl text-center pb-8">
-               <TextDecorationBolder>AmazonFACE + Datamap</TextDecorationBolder>
+              <TextDecorationBolder>DataMap for AmazonFACE</TextDecorationBolder>
             </h1>
 
             <h1 className="font-normal text-7xl text-center pb-8">
-              Scientific data portal analysis, for AmazonFACE project.
+              Scientific data portal analysis, for AmazonFACE Program.
               <br />
             </h1>
           </div>
@@ -48,6 +48,19 @@ export default function HomePage() {
         <div className="py-12 bg-gradient-to-t from-primary-50 h-40"></div>
       </div>
       <div className="container mx-auto px-8">
+
+        <section className="mb-40">
+          <p className="display-4 text-center">
+            AmazonFACE Program
+          </p>
+          <p>
+            The central feature of the program is a field experiment of unprecedented scope that will expose an area of mature forest in the Amazon to a predicted future concentration of CO2 at a research station near Manaus, Brazil, using "Free - Air CO2 Enrichment" (FACE). Greater knowledge about how the world's largest tropical forest functions in light of climate change and the use of this knowledge to guide regional policies on climate change mitigation and adaptation are part of the legacy the program seeks to establish.
+          </p>
+          <p>
+            Know more about the program in <a href="https://amazonface.unicamp.br/" target="_blank">https://amazonface.unicamp.br/</a>.
+          </p>
+        </section>
+
         <section className="mb-40">
           <p className="display-4 text-center">
             With DataMap you can find environmental datasets from diverse
@@ -86,19 +99,7 @@ export default function HomePage() {
             correlations, uncover insights, and retrieve specific datasets with
             unparalleled ease.
           </p>
-          <p>
-            Search foravailable categories or do an advanced search in our tool.
-          </p>
 
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 py-4">
-            <SearchCategory>Aerosols</SearchCategory>
-            <SearchCategory>Atmospheric State</SearchCategory>
-            <SearchCategory>Cloud Properties</SearchCategory>
-            <SearchCategory>Radiometric</SearchCategory>
-            <SearchCategory>Surface Properties</SearchCategory>
-            <SearchCategory>Subsoil and groundwater properties</SearchCategory>
-            <SearchCategory>Renewable Energy</SearchCategory>
-          </div>
         </section>
 
         <section className="mb-40">
